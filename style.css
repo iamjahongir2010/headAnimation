@@ -42,4 +42,31 @@ html, body {
       0 0 20px #00e608,
       0 0 40px #a500e6,
       0 0 80px #e60000;
-  } 
+  }
+.formRegister{
+    margin-top: 5%;
+    border: 2px solid blueviolet;
+    padding: 5% 2% 5% 2%;
+    width: 33%;
+    margin-left: 33%;
+    border-radius: 3em;
+    background-color: blueviolet;
+    color: white;
+    font-family: serif;
+    font-size: 1.5em;
+    transform: scale(1);
+}
+.ready, .cancel{
+    border: 0;
+    font-size: 1em;
+    width: 40%;
+    padding: 2%;
+    border-radius: 20em;
+}
+.ready{
+    margin-left: 5%;
+}
+.cancel{
+    margin-right: 5%;
+    cursor: pointer;
+}

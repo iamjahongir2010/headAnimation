@@ -13,7 +13,29 @@
             <a href="#" class="headbutton">О нас</a>
             <a href="#" class="headbutton">Покупки</a>
             <a href="#" class="headbutton">Наши контакты</a>
+            <a href="#" class="headbutton">Register</a>
         </div>  
     </header>
+    <main>
+        <div class="formRegister">
+            <form id="main-form" method="post"><!-- от return зависит обновление страницы.  -->
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Name" id="name"><br><br>
+                <label for="password">password</label>
+                <input type="password" name="pass" placeholder="password" id="pass"><br><br>
+                <label for="repass">repass</label>
+                <input type="password" name="repass" placeholder="repass" id="repass"><br><br>
+                <span>Пол:</span>
+                <input type="radio" name="state" id="male" value="Men">
+                <label for="male">Men</label>
+                <input type="radio" name="state" id="female" value="Women">
+                <label for="female">Women</label><br><br>
+                <div id="error" style="color: red;"></div>
+                <button type="button" onclick=cansel()  class="cancel" name="cansel">Отмена</button>
+               
+            </form>
+        </div>
+    </main>
+    <script src="register.js"></script>
 </body>
 </html>

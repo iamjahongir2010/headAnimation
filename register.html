@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="main-form" onsubmit="return checkForm(this)" method="post"><!-- от return зависит обновление страницы.  -->
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name" id="name"><br><br>
+        <label for="password">password</label>
+        <input type="password" name="pass" placeholder="password" id="pass"><br><br>
+        <label for="repass">repass</label>
+        <input type="password" name="repass" placeholder="repass" id="repass"><br><br>
+        <span>Пол:</span>
+        <input type="radio" name="state" id="male" value="Men">
+        <label for="male">Men</label><br><br>
+        <input type="radio" name="state" id="female" value="Women">
+        <label for="female">Women</label><br><br>
+        <div id="error" style="color: red;"></div>
+        <input type="submit" name="submit" value="Готово"><br>
+    </form>
+    
+</body>
+</html>
